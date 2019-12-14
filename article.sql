@@ -1,6 +1,5 @@
 CREATE DATABASE  IF NOT EXISTS `article` ;
 USE `article`;
--
 
 DROP TABLE IF EXISTS `article`;
 CREATE TABLE `article` (
@@ -15,7 +14,7 @@ CREATE TABLE `article` (
 
 
 LOCK TABLES `article` WRITE;
-;
+
 INSERT INTO `article` VALUES (1,'test','test',1,'2017-05-18 13:50:19','2017-05-18 13:50:19');
 
 UNLOCK TABLES;

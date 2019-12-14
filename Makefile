@@ -12,7 +12,7 @@ clean:
 	if [ -f ${BINARY} ] ; then rm ${BINARY} ; fi
 
 docker:
-	docker build -t go-clean-arch .
+	docker build -t go-app .
 
 run:
 	docker-compose up

@@ -2,7 +2,7 @@ version: "2.3"
 services:
   web:
     image: go-clean-arch
-    container_name: article_management_api
+    container_name: Papi
     ports:
       - 9090:9090
     depends_on:
@@ -12,8 +12,8 @@ services:
     volumes:
       - ./config.json:/app/config.json
   mysql:
-    image: mysql:5.7 
-    container_name: go_clean_arch_mysql
+    image: mysql:5.7
+    container_name: arch_mysql
     command: mysqld --user=root
     volumes:
       - ./article.sql:/docker-entrypoint-initdb.d/init.sql
